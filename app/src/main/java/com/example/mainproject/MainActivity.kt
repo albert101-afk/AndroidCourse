@@ -6,7 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
-import androidx.compose.runtime.*зц
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
@@ -47,7 +47,7 @@ fun GuessNumberGame() {
     ) {
         if (isNumberGuessed) {
             AsyncImage(
-                model = "https://unsplash.com",
+                model = "https://img.championat.com/news/big/a/w/donk-iz-sostava-team-spirit-po-counter-strike-2-voshyol-v-spisok-30-do-30-ot-forbes_17165664592092305713.jpg",
                 contentDescription = "Победа!",
                 modifier = Modifier
                     .size(250.dp)
