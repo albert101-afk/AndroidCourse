@@ -3,7 +3,7 @@ package com.example.kotlintest
 fun main() {
     println(analyzeIntList(listOf(0, 4, 5, 59, 97, -20, 100, 5, 67, -2, -100)))
     println("--------------------------------")
-    println(passwordVerification("Alba_77_ww"))
+    println(passwordVerification("77777777"))
 }
 
 fun analyzeIntList(list : List<Int>): String {
@@ -31,6 +31,6 @@ fun passwordVerification(password : String) {
     if (password.any({ !it.isLetterOrDigit()})) conditions++
     if (conditions == 5) println("Password is secure")
     if (conditions == 4) println("Password is good")
-    if (conditions == 2 or 3) println("Password is middle")
+    if (conditions == 2 || conditions == 3) println("Password is middle")
     if (conditions < 2) println("Password is bad")
 }
